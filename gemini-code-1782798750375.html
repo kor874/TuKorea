@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuKorea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🇰🇷 TuKorea</h1>
+    <p class="subtitle">대한민국 유튜브 인기 검색 플랫폼</p>
+
+    <form id="search-form">
+        <input
+            type="text"
+            id="keyword-input"
+            placeholder="검색어를 입력하세요"
+            required
+        >
+        <button type="submit">검색</button>
+    </form>
+
+    <div id="result-header" style="display: none;">
+        <h2 class="result-title" id="result-keyword">"" 검색 결과</h2>
+        <p class="result-count" id="result-count">총 0개의 영상을 찾았습니다.</p>
+    </div>
+
+    <div id="video-list"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
